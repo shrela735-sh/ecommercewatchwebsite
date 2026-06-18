@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="../../Css/style.css">
+    <style>
+        /*Internal Css Starts Here*/
+        footer {
+            border-top: 1px solid #222;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        footer .col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        footer .logo {
+            margin-bottom: 30px;
+        }
+        
+        footer h4 {
+            font-size: 15px;
+            padding-bottom: 20px;    
+        }
+        
+        footer p {
+            font-size: 15px;
+            margin: 0 0 8px 0; 
+        }
+        
+        footer a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        
+        footer .follow {
+            margin-top: 20px;
+            padding-right: 4px;
+            cursor: pointer;
+        }
+        
+        footer a:hover {
+            color: #088178;
+        }
+        
+        footer .copyright {
+            width: 100%;
+            text-align: center;
+        }
+        
+        #submits {
+            width: 90%;
+            height: 50px; /* Adjust the height as needed */
+            font-size: 16px;
+            padding: 10px;
+        }
+        /*Internal Css Ends Here*/
+
+    </style>
+</head>
+
+<body>
+    
+    <section id="logo">
+        <a href="../../index.html"><img src="../../images/logo black.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a class="active" href="../product.html">Product</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../about.html">About Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <center>
+        <section>
+            <input type="text" id="submits" name="name" required placeholder="Leave Review Here..." maxlength="50">
+            <button onclick="Submit()" style="color: #088178;">Submit</button>
+        </section>
+    </center>
+
+    <section id="product-details" class="section-p1">
+
+        <div class="single-product-img">
+            <img src="../../images/Product/gold.png" width="100%" id="MainImg" alt="">
+        </div>
+
+        <div class="single-prodetails">
+            <h6>Home/ Watches</h6>
+            <h4>Gurkha G200 GOld</h4>
+            <strike style="color: red;">$200</strike>
+            <h2>$127</h2>
+            <select>
+                <option>Select Size</option>
+                <option>38 mm</option>
+                <option>40 mm</option>
+                <option>42 mm</option>
+                <option>45 mm</option>
+            </select>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <button class="normal" onclick="openPopup()">Add To Cart</button>
+            <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>The Item Has Been Added To Cart Successfully.</p>
+            <button onclick="closePopup()">OK</button>
+            </div>
+            <h4>Product Details</h4>
+            <span>Gurkha G200 Gold
+                  100M Water Resistance,
+                  Sapphire crystal Glass,
+                  Pure Leather Strap,
+                  2 Years International Warranty.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2 style="color: #088178;">Feature Products</h2>
+        <p>Watch Collections</p>
+        <div class="product-container">
+            <div class="prod">
+                <img src="../../images/Product/black.png" alt="">   
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Black</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$127</h4>
+                </div> 
+                <a href="singleproduct9.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod">
+                <img src="../../images/Product/silver.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Silver</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$120</h4>
+                </div> 
+                <a href="singleproduct11.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod">
+                <img src="../../images/Product/mixgold.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Mix</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$120</h4>
+                </div> 
+                <a href="singleproduct10.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+        </div>
+    </section>
+
+   <!--<section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+           <h4 style="color:#fff ;">Sign Up For Newsletters</h4>
+           <p style="color:#818ea0;">Get E-mail updates about our lastest shop and <span>offer.</span></p>   
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>-->
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../../images/logo black.png" alt="">
+            <h4 style="color: #088178;">Contact</h4>
+            <p><strong style="color: #088178;">Address:</strong> Durbar Margh, Kathmandu, Nepal 44600</p>
+            <p><strong style="color: #088178;">Phone:</strong> +01 4224 759 /(+977) 97 4774 9588</p>
+            <p><strong style="color: #088178;">Hours:</strong> 10:00 AM - 18:00 PM, Sun - Sat</p>
+            <div class="newstext">
+                <h4 style="color:#fff ;">Sign Up For Newsletters</h4>
+                <p style="color:#818ea0;">Get E-mail updates about our lastest shop and <span>offer.</span></p>   
+             </div>
+             <div class="form">
+                 <input type="text" placeholder="Your Email Address">
+                 <button class="normal" onclick="openPopup()">Subscribe</button>
+                 <div class="popup" id="popup">
+                 <h2>Thank You!</h2>
+                 <p>Thank You For Subscribing.</p>
+                 <button onclick="closePopup()">OK</button>
+                 </div>
+             </div>
+        </section>
+            <div class="follow">
+                <h4 style="color: #088178;">Follow us</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/">
+                    <img src="../../images/aaw6si4mt.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <img src="../../images/instagram-logo-vector-illustration_1300495-24.png" alt="">
+                    </a>
+                    <a href="https://x.com/?lang=en">
+                    <img src="../../images/new-2023-twitter-logo-x-icon-design_1017-45418.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4 style="color: #088178;">Quick link</h4>
+            <a href="../../index.html">Home</a>
+            <a href="../product.html">Product</a>
+            <a href="../blog.html">Blog</a>
+            <a href="../research.html">Research</a>
+            <a href="../about.html">About Us</a>
+        </div>
+
+        <div class="copyright">
+            <p>&#169 2025. ChronoVibes</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

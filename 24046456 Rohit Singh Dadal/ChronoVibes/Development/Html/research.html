@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoVibes - Research</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 50px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color:#000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+
+/* Header Start */
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20b   px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease; /*Allow smooth transition*/
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+/* Home Page */
+
+#heroSection {
+    background-image: url("../images/photo-1731759992333-909811e3070c.png");
+    height: 780px;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#heroSection h4 {
+    padding-bottom: 15px;
+}
+
+#heroSection h1 {
+    color: #088178;
+}
+
+#heroSection button {
+    background-image: url("../images/png-transparent-gradient-desktop-color-background-miscellaneous-blue-atmosphere-thumbnail.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Feature Product Starts */
+#product1 {
+    text-align: center;
+}
+
+#product1 .product-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .prod {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7cc;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+}
+
+#product1 .prod:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+#product1 .prod img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .prod .desc {
+    text-align: start;
+    padding: 10px 0.1px;
+}
+
+#product1 .prod .desc span {
+    color: #606064;
+    font-size: 12px;
+}
+
+#product1 .prod .desc h5 {
+    padding-top: 8px;
+    color: #1a1a1a;
+    font-size: 15px;
+}
+
+#product1 .prod .desc h4 {
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .prod .cart {
+   position: absolute;
+   bottom: 20px;
+   right: 10px;
+}
+
+/* Banner Starts Here */
+#banner {
+    display: flex; /*enables the flexbox layout mode, allowing you to manipulate elements' alignment, spacing, and order within a container.*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/repair.png");
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #088178;
+}
+
+#banner button:hover {
+    background: #088178;
+    color: aliceblue;
+}
+
+/*sm-banner starts here*/
+#sm-banner {
+    display: flex;
+    justify-content: space-between; /*all available space is placed between the first and last items, pushing both items to opposite edges of the container.*/
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/Product/gurkha.png");
+    min-width: 580px;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box1 {
+    background-image: url("../images/black.png"); 
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("../images/black.png"); 
+}
+
+#sm-banner h4 {
+    font-size: 30px;
+    font-weight: 350;
+}
+
+#sm-banner button:hover {
+    background: #088178;
+    color: aliceblue;
+}
+
+#banner1 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/Banner.png");
+    min-width: 580px;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#banner1 button:hover {
+    background: #088178;
+    color: aliceblue;
+}
+
+#newsletter {
+    display: flex;
+    padding-top: 8px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../images/Deepmatter_-_Newsletter_header_for_website_-_V1.2.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background: color #041e42;
+}
+
+#newsletter h4 {
+    font-size: 25px;
+    font-weight: 700;   
+}
+
+#newsletter p {
+    font-size: 15px;
+    font-weight: 600;   
+}
+
+#newsletter p span {
+    color: #ffbd2f;   
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input {
+    min-height: 48px;
+    padding: 0 7.5px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* New Featured Collection Section */
+#featured-collection {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+#featured-collection h2 {
+    text-align: center;
+    color: #088178;
+    margin-bottom: 40px;
+}
+
+.collection-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    gap: 30px;
+}
+
+.collection-item {
+    flex: 1;
+    text-align: center;
+}
+
+.collection-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.collection-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.collection-item:hover .collection-image img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(8, 129, 120, 0.9);
+    padding: 15px;
+    transition: bottom 0.3s ease;
+}
+
+.collection-item:hover .overlay {
+    bottom: 0;
+}
+
+.overlay button {
+    background-color: white;
+    color: #088178;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #088178;
+    color: white;
+}
+
+.collection-item h3 {
+    margin-top: 20px;
+    color: #222;
+    font-size: 24px;
+}
+
+/* New Latest News Section */
+#latest-news {
+    padding: 60px 80px;
+}
+
+#latest-news h2 {
+    text-align: center;
+    color: #088178;
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.news-item {
+    flex: 1;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content .date {
+    color: #088178;
+    font-size: 14px;
+}
+
+.news-content h3 {
+    margin: 10px 0;
+    color: #222;
+    font-size: 20px;
+}
+
+.news-content p {
+    color: #465b52;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #088178;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+.read-more::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #088178;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover::after {
+    transform: scaleX(1);
+}
+
+/*Product pages Starts here*/
+
+#product-Hero {
+    background-image: url("../images/daytona.png");
+    width: 100%;
+    height: 350px;
+    padding: 0 80px;
+    background-position: top 25% right 0%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: flex;
+    flex-direction: column;
+}
+
+#product-Hero p {
+    color: #fefefe;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+   text-decoration: none; 
+   background-color: #088178;
+   padding: 15px 20px;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: 600;
+}
+
+/*Single product details*/
+
+#product-details {
+    display: flex;
+    margin-top: 20px;
+}
+
+#product-details .single-product-img {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7cc;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin-right: 50px;
+}
+
+#product-details .single-prodetails {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#product-details .single-prodetails h4 {
+    padding: 40px 0 20px 0;
+}
+
+#product-details .single-prodetails h2 {
+    font-size: 20px;
+}
+
+#product-details .single-prodetails select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#product-details .single-prodetails input {
+    width: 50px;
+    height: 47px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+
+#product-details .single-prodetails button {
+    background: #088178;
+    color: #fff;
+}
+
+#product-details .single-prodetails span {
+    line-height: 25px;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;  /* Changed to flex from grid */
+    justify-content: space-between;  /* This will push columns to edges */
+    padding: 40px 80px;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Left column - Contact info */
+footer .col:first-child {
+    flex: 1;  /* Takes available space */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #088178;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #465b52;
+}
+
+footer p strong {
+    color: #088178;
+    margin-right: 5px;
+}
+
+/* Follow us section */
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .follow .icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+footer .follow .icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Right column - Quick links */
+footer .col:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  /* Aligns content to the right */
+    margin-left: 50px;  /* Space between columns */
+}
+
+footer .col:last-child h4 {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #465b52;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: right;
+    transition: color 0.2s ease;
+}
+
+footer .col a:hover {
+    color: #088178;
+}
+
+/* Copyright section - now needs to be positioned differently */
+footer {
+    position: relative;  /* For absolute positioning of copyright */
+}
+
+footer .copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+footer .copyright p {
+    font-size: 14px;
+    color: #465b52;
+    margin: 0;
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    font-family: cursive;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 5px solid #e3e6f3;
+  }
+  
+  .comparison-table th {
+    background-color: #088178;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 10px solid #0a6f67;
+  }
+  
+  .comparison-table th:first-child {
+    border-top-left-radius: 20px;
+  }
+  
+  .comparison-table th:last-child {
+    border-top-right-radius: 20px;
+  }
+  
+  .comparison-table td {
+    padding: 20px;
+    border-bottom: 5px solid #0a6f67;
+    border-right: 5px solid #0a6f67;
+    vertical-align: top;
+  }
+  
+  .comparison-table td:last-child {
+    border-right: 5px solid #0a6f67;
+  }
+  
+  .comparison-table tr:last-child td {
+    border-bottom: 5px solid #0a6f67;
+  }
+  
+  .comparison-table tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comparison-table .feature {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .comparison-table .website {
+    color: #088178;
+    font-weight: bold;
+  }
+  
+  .comparison-table .description {
+    color: #465b52;
+    line-height: 1.6;
+  }
+  
+  .image-comparison {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e3e6f3;
+    padding: 8px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+  }
+  
+  .image-label {
+    font-size: 15px;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+    padding: 4px 0;
+    border-top: 1px solid #e3e6f3;
+  }
+
+  /*About Us*/
+ 
+#our-team article{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 16px;
+ }
+ #our-team .team{
+     text-align: center;
+ }
+ #our-team article .team a{
+     background-color: #088178;
+     padding: .3px 1px;
+     color:white;
+     border: none;
+     border-radius: .5px;
+     text-decoration: none;
+     font-size: 14px;
+ }
+ #our-team article .team a:hover{
+     transition: .5s ease-in-out;
+    background-color: #088178;
+    font-size: 14px;
+ }
+ #our-team article .team p{
+     padding: 16px 0;
+ }
+ #our-team article img{
+     border-radius: 15px;
+     /* border-top-left-radius: 50%; */
+     /* border-bottom-right-radius: 50%; */
+     max-width: 500px;
+     max-height: 300px;
+ }
+ #our-team article figure{
+     width: 100%;
+     height: 40vh;
+ }
+ #our-team article .team .details{
+     padding: .8px 0;
+ }
+ #our-team .heading{
+     padding: 2px;
+     font-size: 2px;
+     color: #088178;
+ }
+ 
+ /*for Cv*/
+ .resume{
+     display: grid ;
+     grid-template-columns: 35% auto;
+     background-color: white;
+     width: 90%;
+     margin: 5px 0;
+     padding-bottom: 5px;
+     font-size: 14px;
+ }
+ .left{
+     background: rgb(231, 228, 228);
+ }
+ .left .profile{
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     padding: 1px 0;
+ }
+ .left .profile figure{
+     width:300px;
+     height:300px;
+     border-radius: 50% 50%;
+     background-size: cover;
+ }
+ .contact div div span img{
+     width: 1px;
+     padding:.2px .5px;
+ }   
+ .h2{
+     padding:.5px 1px ;
+     color: #088178;
+ }
+ .space{
+     padding: .5px 2px;
+ }
+ /* list */
+ ul li{
+     list-style: none;
+     /* list-style-image: url('icons/arrow.png'); */
+ }
+ li::before {
+     content: '';
+     display: inline-block;
+     width: 1.1px;
+     height: 16px;
+     background-image: url('icons/arrow.png');
+     background-size: cover;
+     margin-right: 10px;
+ }
+ /* introd */
+ .intro{
+     height: 400px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgb(228, 222, 222);
+     margin: 32px 0;
+ }
+ .intro div h1{
+     text-transform: uppercase;
+     color: #088178;
+     font-weight:900;
+     font-size: 42px;
+ }
+ /* Education */
+ .education{
+     padding: 16px 0;
+ }
+ .education .edu{
+     display: grid;
+     grid-template-columns: 50% auto;
+     padding: .4px 0;
+ }
+ .education .edu h3{
+     padding: .2px 0;
+ }
+  .unique-features {
+      background-color: #f5f5f5;
+      padding: 40px;
+      border-radius: 10px;
+      margin: 40px 80px;  /* Added proper margins to match the layout */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  }
+  
+  .feature-item {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 25px;  /* Increased spacing between items */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+  }
+  
+  .feature-item:last-child {
+      margin-bottom: 0;  /* Remove margin from last item */
+  }
+  
+  .feature-item:hover {
+      transform: translateY(-2px);
+  }
+  
+  .feature-item p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #465b52;
+  }
+  
+  .feature-item strong {
+      color: #088178;
+  }
+  
+  .feature-image {
+      width: 100%;
+      max-height: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .unique-features h3 {
+      font-size: 24px;
+      margin-bottom: 25px;  /* Increased margin below title */
+  }
+  </style>
+<body>
+    <section id="logo">
+        <a href="../index.html"><img src="../images/logo black.png" class="logo" alt=""></a>
+
+        <!--time and date-->
+        <div id="clock" class="clock"></div> <!-- Clock added here -->
+        <div id="date" class="clock"></div> <!-- Date added here-->
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Html/product.html">Product</a></li>
+                <li><a href="../Html/blog.html">Blog</a></li>
+                <li><a class="active" href="../Html/research.html">Research</a></li>
+                <li><a href="../Html/about.html">About Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="research-content">
+        <div class="reference-section">
+            <h2>Website References & Inspirations</h2> 
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Inspiration (Source)</th>
+                    <th>ChronoVibes Implementation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="feature">Featured Collection</td>
+                    <td class="description">
+                      <span class="website">Taghuer</span><br>
+                      Product categorization with elegant display of watch collections
+                      <div class="image-container">
+                        <a href="https://www.tagheuer.com/int/en/" target="_blank"><img src="../images/research/reference5.png" alt="Tag Heuer Featured Collection"></a>
+
+                      </div>
+                    </td>
+                    <td class="description">
+                      Customized featured collection section with unique design and direct product page access
+                      <div class="image-container">
+                        <img src="../images/research/reference55.png" alt="ChronoVibes Featured Collection">
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature">Visual Assets & Product Images</td>
+                    <td class="description">
+                      <span class="website">Gurkha watch</span><br>
+                      Professional timepiece photography showcasing craftsmanship details
+                      <div class="image-container">
+                        <a href="https://www.gurkhawatch.com" target="_blank"> <img src="../images/research/reference4.png" alt="Gurkha Watch Product Images"></a>
+
+                      </div>
+                    </td>
+                    <td class="description">
+                      Adapted professional photography style while maintaining brand identity
+                      <div class="image-container">
+                        <img src="../images/research/reference44.png" alt="ChronoVibes Product Images">
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature">Homepage Slider</td>
+                    <td class="description">
+                      <span class="website">Caliber shoes</span><br>
+                      Basic navigation and content organization structure
+                      <div class="image-container">
+                        <a href="https://calibershoes.com" target="_blank"><img src="../images/research/reference3.png" alt="Caliber Shoes Homepage"></a>
+
+                      </div>
+                    </td>
+                    <td class="description">
+                      Enhanced layout with custom color scheme and improved navigation
+                      <div class="image-container">
+                        <img src="../images/research/sliderdateandtime.png" alt="ChronoVibes Homepage">
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature">Portfolio</td>
+                    <td class="description">
+                      <span class="website">The Digital CV</span><br>
+                      User-friendly and organized design with snoothing effects   
+                      <div class="image-container">
+                        <a href="https://www.thedigitalcv.com" target="_blank" ><img src="../images/research/portfolio.png" alt="portfolio"></a>
+
+                      </div>
+                    </td>
+                    <td class="description">
+                      Streamlined and eyecatching design to make the cv more efficient
+                      <div class="image-container">
+                        <img src="../images/research/reference22.png" alt="portfolio">
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature">Premium Features</td>
+                    <td class="description">
+                      <span class="website">Omega watches</span><br>
+                      Latest News section and interactive design elements
+                      <div class="image-container">
+                        <a href="https://www.omegawatches.com" target="_blank"><img src="../images/research/reference1.png" alt="Omega Watches Premium Features"></a>
+
+                      </div>
+                    </td>
+                    <td class="description">
+                      Incorporated news section with enhanced interactive elements
+                      <div class="image-container">
+                        <img src="../images/research/reference11.png" alt="ChronoVibes Premium Features">
+>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="unique-features">
+                <h4 style="color: #088178; margin-bottom: 20px;">ChronoVibes Unique Features</h4>
+                <h3>!!Click on the images to view them fully!!</h3>
+                
+                <div class="feature-item">
+                    <p><strong>Custom Color Scheme:</strong> We've implemented a distinctive teal-based (#088178) color scheme that sets us apart from traditional watch websites.</p>
+                    <a href="../images/research/feature1.jpg" target="_blank">
+                        <img src="../images/research/feature1.jpg" alt="Custom Color Scheme" class="feature-image">
+                    </a>
+                </div>
+            
+                <div class="feature-item">
+                    <p><strong>Enhanced Navigation:</strong> Our navigation system combines the best elements of our references while adding smooth transitions and improved mobile responsiveness.</p>
+                    <a href="../images/research/feature2.png" target="_blank">
+                        <img src="../images/research/feature2.png" alt="Enhanced Navigation" class="feature-image">
+                    </a>
+                </div>
+            
+                <div class="feature-item">
+                    <p><strong>Interactive Elements:</strong> We've added unique hover effects and animations that enhance user engagement while maintaining professional aesthetics.</p>
+                    <a href="../images/research/feature3.png" target="_blank">
+                        <img src="../images/research/feature3.png" alt="Interactive Elements" class="feature-image">
+                    </a>
+                </div>
+            
+                <div class="feature-item">
+                    <p><strong>Localized Content:</strong> Unlike our references, we've focused on Nepal-specific content and pricing, making our platform more relevant to our target market.</p>
+                    <a href="../images/research/feature4.png" target="_blank">
+                        <img src="../images/research/feature4.png" alt="Localized Content" class="feature-image">
+                    </a>
+                </div>
+            
+                <div class="feature-item">
+                    <p><strong>Hybrid Layout:</strong> Our design combines e-commerce functionality with editorial content, creating a more engaging shopping experience.</p>
+                    <a href="../images/research/feature5.jpg" target="_blank">
+                        <img src="../images/research/feature5.jpg" alt="Hybrid Layout" class="feature-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+           <h4 style="color:#fff;">Sign Up For Newsletters</h4>
+           <p style="color:#818ea0;">Get E-mail updates about our latest shop and <span>offers.</span></p>   
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>-->
+
+    <footer class="section-p1">
+        <!-- Contact Information Column -->
+        <div class="col">
+            <img src="../images/logo black.png" alt="ChronoVibes Logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Durbar Margh, Kathmandu, Nepal 44600</p>
+            <p><strong>Phone:</strong> +01 4224 759 /(+977) 97 4774 9588</p>
+            <p><strong>Hours:</strong> 10:00 AM - 18:00 PM, Sun - Sat</p>
+            <div class="newstext">
+              <h4 style="color:#fff;">Sign Up For Newsletters</h4>
+              <p style="color:#818ea0;">Get E-mail updates about our latest shop and <span>offers.</span></p>   
+           </div>
+           <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal" onclick="openPopup()">Subscribe</button>
+            <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>Thank You For Subscribing.</p>
+            <button onclick="closePopup()">OK</button>
+            </div>
+           </div>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../images/aaw6si4mt.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../images/instagram-logo-vector-illustration_1300495-24.png" alt="Instagram">
+                    </a>
+                    <a href="https://x.com/?lang=en" target="_blank">
+                        <img src="../images/new-2023-twitter-logo-x-icon-design_1017-45418.png" alt="X">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Quick Links Column -->
+        <div class="col">
+            <h4>Quick link</h4>
+            <a href="../index.html">Home</a>
+            <a href="../Html/product.html">Product</a>
+            <a href="../Html/blog.html">Blog</a>
+            <a href="../Html/research.html">Research</a>
+            <a href="../Html/about.html">About Us</a>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>© 2025. ChronoVibes</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

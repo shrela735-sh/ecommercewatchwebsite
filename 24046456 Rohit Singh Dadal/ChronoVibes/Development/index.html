@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>ChronoVibes - Premium Watches</title>
+    <link rel="stylesheet" href="../Development/Css/style.css">
+    <style>
+               .herosection 
+          {
+          width:100%; 
+          height:  100%;
+          background-size: cover;
+        background-position: top 25% right 0%;
+        padding:  1px ;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+        justify-content: center;   
+          }
+    
+        .herosection img  
+          {
+          width: 100%;
+          height: 100%;
+          }
+    </style>
+</head>
+
+<body>
+    <section id="logo">
+        <a href="./index.html"><img src="../Development/images/logo black.png" class="logo" alt=""></a>
+        
+        <!--time and date-->
+        <div id="clock" class="clock"></div> <!-- Clock added here -->
+        <div id="date" class="clock"></div> <!-- Date added here-->
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./Html/product.html">Product</a></li>
+                <li><a href="./Html/blog.html">Blog</a></li>
+                <li><a href="./Html/research.html">Research</a></li>
+                <li><a href="./Html/about.html">About Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="herosection">
+        <div id="img">
+          <img src="../Development/images/photo-1731759992333-909811e3070c.png">
+        </div>
+      </div>
+
+    <!-- New Featured Collection Section -->
+    <section id="featured-collection" class="section-p1">
+        <h2>Featured Collection</h2>
+        <div class="collection-container">
+            <div class="collection-item">
+                <div class="collection-image">
+                    <img src="../Development/images/Product/luxurycollection.png" alt="Luxury Collection">
+                    <div class="overlay">
+                        <a href="../Development/Html/product.html"><button class="normal">Discover More</button></a>
+                    </div>
+                </div>
+                <h3>Luxury Collection</h3>
+            </div>
+            <div class="collection-item">
+                <div class="collection-image">
+                    <img src="../Development/images/Product/sportcollection.png" alt="Sport Collection">
+                    <div class="overlay">
+                        <a href="../Development/Html/product.html"><button class="normal">Discover More</button></a>
+                    </div>
+                </div>
+                <h3>Sport Collection</h3>
+            </div>
+            <div class="collection-item">
+                <div class="collection-image">
+                    <img src="../Development/images/Product/classiccollection.png" alt="Classic Collection">
+                    <div class="overlay">
+                        <a href="../Development/Html/product.html"><button class="normal">Discover More</button></a>
+                    </div>
+                </div>
+                <h3>Classic Collection</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2 style="color: #088178;">Feature Products</h2>
+        <p>Watch Collections</p>
+        <div class="product-container">
+            <div class="prod" onclick="window.location.href='../Development/Html/product-detail/singleproduct.html'">
+                <img src="../Development/images/Product/nato-2.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Nato-2</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Development/Html/product-detail/singleproduct.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod" onclick="window.location.href='../Development/Html/product-detail/singleproduct2.html'">
+                <img src="../Development/images/Product/gurkha.png" alt="">   
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha RGR CASUAL</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$127</h4>
+                </div> 
+                <a href="../Development/Html/product-detail/singleproduct2.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod" onclick="window.location.href='../Development/Html/product-detail/singleproduct3.html'">
+                <img src="../Development/images/Product/nato-nylon1.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Nato Nylon</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Development/Html/product-detail/singleproduct3.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod"  onclick="window.location.href='../Development/Html/product-detail/singleproduct4.html'">
+                <img src="../Development/images/Product/wmens.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Warriors Gents</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$127</h4> 
+                </div> 
+                <a href="../Development/html/product-detail/singleproduct4.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class=".section-m1">
+        <h4 style="font-size: 40px;">Repair Services</h4>
+        <h2 style="color: silver;">On Every Watches And - <span>Warranty Upto 2 Years</span></h2>
+    </section>
+
+    <!-- New Latest News Section -->
+    <section id="latest-news" class="section-p1">
+        <h2>Latest News</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="../Development/images/Product/classiccollection.png" alt="News 1">
+                <div class="news-content">
+                    <span class="date">January 15, 2025</span>
+                    <h3>New Collection Launch</h3>
+                    <p>Discover our latest collection of vintage-inspired timepieces.</p>
+                    <a href="../Development/Html/product.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="../Development/images/research/watchcare.png" alt="News 2">
+                <div class="news-content">
+                    <span class="date">January 12, 2025</span>
+                    <h3>Watch Care Guide</h3>
+                    <p>Expert tips on maintaining your luxury timepiece.</p>
+                    <a href="../Development/Html/blog.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="../Development/images/Product/luxurycollection.png" alt="News 3">
+                <div class="news-content">
+                    <span class="date">January 10, 2025</span>
+                    <h3>Limited Edition Release</h3>
+                    <p>Introducing our exclusive limited edition series.</p>
+                    <a href="../Development/Html/product.html" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4 style=color:#088178;>Product</h4>
+            <a href="../Development/Html/product.html"><button class="normal">Learn More</button></a>
+        </div>
+        <div class="banner-box banner-box1">
+            <h4 style="color: #088178;">Blog</h4>
+            <a href="../Development/Html/blog.html"><button class="normal">Learn More</button></a>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4 style="color: #088178;">Research</h4>
+            <a href="../Development/Html/research.html"><button class="normal">Learn More</button></a>
+        </div>
+    </section>
+
+    <section id="banner1">
+        <div class="banner-box banner-box2">
+            <h4 style="color: #088178;">About Us</h4>
+            <a href="../Development/Html/about.html"><button class="normal">Learn More</button></a>
+        </div>
+    </section>
+
+    <!--<section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+           <h4 style="color:#fff ;">Sign Up For Newsletters</h4>
+           <p style="color:#818ea0;">Get E-mail updates about our lastest shop and <span>offer.</span></p>   
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>-->
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../Development/images/logo black.png" alt="">
+            <h4 style="color: #088178;">Contact</h4>
+            <p><strong style="color: #088178;">Address:</strong> Durbar Margh, Kathmandu, Nepal 44600</p>
+            <p><strong style="color: #088178;">Phone:</strong> +01 4224 759 /(+977) 97 4774 9588</p>
+            <p><strong style="color: #088178;">Hours:</strong> 10:00 AM - 18:00 PM, Sun - Sat</p>
+            <div class="newstext">
+                <h4 style="color:#fff ;">Sign Up For Newsletters</h4>
+                <p style="color:#818ea0;">Get E-mail updates about our lastest shop and <span>offer.</span></p>   
+             </div>
+             <div class="form">
+                 <input type="text" placeholder="Your Email Address">
+                 <button class="normal" onclick="openPopup()">Subscribe</button>
+                 <div class="popup" id="popup">
+                 <h2>Thank You!</h2>
+                 <p>Thank You For Subscribing.</p>
+                 <button onclick="closePopup()">OK</button>
+                 </div>
+             </div>
+            <div class="follow">
+                <h4 style="color: #088178;">Follow us</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/">
+                    <img src="../Development/images/aaw6si4mt.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <img src="../Development/images/instagram-logo-vector-illustration_1300495-24.png" alt="">
+                    </a>
+                    <a href="https://x.com/?lang=en">
+                    <img src="../Development/images/new-2023-twitter-logo-x-icon-design_1017-45418.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4 style="color: #088178;">Quick link</h4>
+            <a href="index.html">Home</a>
+            <a href="../Development/Html/product.html">Product</a>
+            <a href="../Development/Html/blog.html">Blog</a>
+            <a href="../Development/Html/research.html">Research</a>
+            <a href="../Development/Html/about.html">About Us</a>
+        </div>
+
+        <div class="copyright">
+            <p>&#169 2025. ChronoVibes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+
+        /*for homepage slider*/
+         var images = ['../Development/images/img1.jpg', '../Development/images/photo-1731759992333-909811e3070c.png', '../Development/images/img3.jpg'];
+    
+    var x = 0;
+    var imgs = document.getElementById('img');
+    //The setInterval() calls a function at theintervals (in milliseconds). 
+    setInterval(slider, 3000);
+
+    function slider() {
+
+      if (x < images.length) 
+        {
+        x = x + 1;
+        } 
+
+      else 
+        {
+        x = 1;
+        }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+
+               function updateClock() {
+    const now = new Date();
+    
+    // Get time in 12-hour format
+    let hours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    
+    // Convert hours to 12-hour format
+    const period = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12; // Ensure 12-hour format
+
+    // Update time
+    document.getElementById('liveclock').textContent = `${hours}:${minutes}:${seconds} ${period}`;
+
+    // Update date
+    const options = { month: 'long', day: 'numeric', year: 'numeric' };
+    document.getElementById('date').textContent = now.toLocaleDateString('en-US', options);
+}
+
+// Run updateClock every second
+setInterval(updateClock, 1000);
+updateClock(); // Run immediately on page load
+    </script>
+</body>
+</html>

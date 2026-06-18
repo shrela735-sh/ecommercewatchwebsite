@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>ChronoVibes - Products</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <style>
+        /* Add responsive styling for collection categories */
+        .categories-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .category {
+            flex: 1;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category img {
+            width: 100%;
+            height: 250px; /* Fixed height */
+            object-fit: cover; /* This ensures the image covers the area without distortion */
+            display: block;
+        }
+
+        .category h3 {
+            padding: 15px;
+            color: #222;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        footer {
+            border-top: 1px solid #222;
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: space-between;
+        }
+        
+        footer .col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        footer .logo {
+            margin-bottom: 30px;
+        }
+        
+        footer h4 {
+            font-size: 15px;
+            padding-bottom: 20px;    
+        }
+        
+        footer p {
+            font-size: 15px;
+            margin: 0 0 8px 0; 
+        }
+        
+        footer a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        
+        footer .follow {
+            margin-top: 20px;
+            padding-right: 4px;
+            cursor: pointer;
+        }
+        
+        footer a:hover {
+            color: #088178;
+        }
+        
+        footer .copyright {
+            width: 100%;
+            text-align: center;
+        }
+
+        #newsletter h4 {
+     font-size: 25px;
+     font-weight: 700;   
+}
+#newsletter p {
+    font-size: 15px;
+    font-weight: 600;   
+}
+
+#newsletter p span {
+    color: #ffbd2f;   
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input {
+    min-height: 3.25rem;
+    padding: 0 1.25ex;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <section id="logo">
+        <a href="../index.html"><img src="../images/logo black.png" class="logo" alt=""></a>
+
+        <!--time and date-->
+        <div id="clock" class="clock"></div> <!-- Clock added here -->
+        <div id="date" class="clock"></div> <!-- Date added here-->
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../../Development/index.html">Home</a></li>
+                <li><a class="active" href="../Html/product.html">Product</a></li>
+                <li><a href="../Html/blog.html">Blog</a></li>
+                <li><a href="../Html/research.html">Research</a></li>
+                <li><a href="../html/about.html">About Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="product-Hero">
+        <h4 style="color:#fefefe">Time Is Limitless</h4>
+        <p>Time Waits For No One!</p>
+    </section>
+
+    <!-- Updated Collection Categories -->
+    <section id="collection-categories" class="section-p1">
+        <h2 style="color: #088178;">Browse Collections</h2>
+        <div class="categories-container">
+            <div class="category" onclick="scrollToCategory('luxury')">
+                <img src="../images/Product/luxurycollection.png" alt="Luxury">
+                <h3>Luxury Collection</h3>
+            </div>
+            <div class="category" onclick="scrollToCategory('sport')">
+                <img src="../images/Product/sportcollection.png" alt="Sport">
+                <h3>Sport Collection</h3>
+            </div>
+            <div class="category" onclick="scrollToCategory('classic')">
+                <img src="../images/Product/classiccollection.png" alt="Classic">
+                <h3>Classic Collection</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2 style="color: #088178;">Available Products</h2>
+        <p>Watch Collections</p>
+    </section>
+
+    <section id="luxury" class="category-section section-p1">
+        <h2 class="category-title" style="color: #088178;">Luxury Collection</h2>
+    </section>
+    <section id="product1" class="section-p1">
+        <div class="product-container">
+            <div class="prod" onclick="window.location.href='../Html/product-detail/singleproduct.html'">
+                <img src="../images/Product/nato-2.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Nato-2</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod" onclick="window.location.href='../Html/product-detail/singleproduct2.html'">
+                <img src="../images/Product/gurkha.png" alt="">   
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha RGR CASUAL</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$127</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct2.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod" onclick="window.location.href='../Html/product-detail/singleproduct3.html'">
+                <img src="../images/Product/nato-nylon1.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Nato Nylon</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct3.html"  style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod"  onclick="window.location.href='../Html/product-detail/singleproduct4.html'">
+                <img src="../images/Product/wmens.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Warriors Gents</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$127</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct4.html"  style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+        </div>
+    </section>
+
+    <section id="sport" class="category-section section-p1">
+        <h2 class="category-title" style="color: #088178;">Sport Collection</h2>
+    </section>
+    <section id="product1" class="section-p1">
+        <div class="product-container">
+            <div class="prod" onclick="window.location.href='../Html/product-detail/singleproduct5.html'">
+                <img src="../images/Product/vblack1.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Vostok Leather</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct5.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod"  onclick="window.location.href='../Pages/product-detail/singleproduct6.html'">
+                <img src="../images/Product/Vautomatic.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Vostok Automatic</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct6.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod" onclick="window.location.href='../Pages/product-detail/singleproduct7.html'">
+                <img src="../images/Product/vgsilicongreen.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Vostok Scilicon Green</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct7.html" style="color: #088178; text-decoration: none;">learn More</a>              
+            </div>
+            <div class="prod" onclick="window.location.href='../Pages/product-detail/singleproduct8.html'">
+                <img src="../images/Product/vrsiliconred.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha Vostok Scilion Red</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$150</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct8.html"style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+        </div>
+    </section>
+
+    <section id="classic" class="category-section section-p1">
+        <h2 class="category-title" style="color: #088178;">Classic Collection</h2>
+    </section>
+    <section id="product1" class="section-p1">
+        <div class="product-container">
+            <div class="prod" onclick="window.location.href='../Html/product-detail/singleproduct9.html'">
+                <img src="../images/Product/black.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Black</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$127</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct9.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod"  onclick="window.location.href='../Pages/product-detail/singleproduct10.html'">
+                <img src="../images/Product/mixgold.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Mix</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$120</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct10.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod"  onclick="window.location.href='../Html/product-detail/singleproduct11.html'">
+                <img src="../images/Product/silver.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Silver</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$120</h4>
+                </div> 
+                <a href="../html/product-detail/singleproduct11.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+            <div class="prod"  onclick="window.location.href='../Html/product-detail/singleproduct12.html'">
+                <img src="../images/Product/gold.png" alt="">
+                <div class="desc">
+                    <span>Gurkha</span>
+                    <h5>Gurkha G200 Gold</h5>
+                    <strike style="color: red;">$200</strike>
+                    <h4>$141</h4>
+                </div> 
+                <a href="../Html/product-detail/singleproduct12.html" style="color: #088178; text-decoration: none;">Learn More</a>              
+            </div>
+        </div>
+    </section>
+    </section>
+
+   <!-- Product Features Section -->
+   <section id="product-features" class="section-p1">
+    <h2 style="color: #088178;">Why Choose Us</h2>
+    <div class="features-container">
+        <div class="feature">
+            <img src="images/warranty-icon.png" alt="">
+            <h3>2 Year Warranty</h3>
+            <p>All our watches come with extended warranty coverage</p>
+        </div>
+        <div class="feature">
+            <img src="images/shipping-icon.png" alt="">
+            <h3>Free Shipping</h3>
+            <p>Free delivery on all orders above $500</p>
+        </div>
+        <div class="feature" style="border: #222;">
+            <img src="images/support-icon.png" alt="">
+            <h3>24/7 Support</h3>
+            <p>Expert assistance always available</p>
+        </div>
+    </div>
+</section>
+
+<!--<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+       <h4 style="color:#fff;">Sign Up For Newsletters</h4>
+       <p style="color:#818ea0;">Get E-mail updates about our latest shop and <span>offer.</span></p>   
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your Email Address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>-->
+
+<footer class="section-p1">
+    <div class="col">
+        <img src="../images/logo black.png" alt="">
+        <h4 style="color: #088178;">Contact</h4>
+        <p><strong style="color: #088178;">Address:</strong> Durbar Margh, Kathmandu, Nepal 44600</p>
+        <p><strong style="color: #088178;">Phone:</strong> +01 4224 759 /(+977) 97 4774 9588</p>
+        <p><strong style="color: #088178;">Hours:</strong> 10:00 AM - 18:00 PM, Sun - Sat</p>
+        <div class="newstext">
+            <h4 style="color:#fff;">Sign Up For Newsletters</h4>
+            <p style="color:#222;">Get E-mail updates about our latest shop and <span>offer.</span></p>   
+         </div>
+         <div class="form">
+             <input type="text" placeholder="Your Email Address">
+             <button class="normal" onclick="openPopup()">Subscribe</button>
+             <div class="popup" id="popup">
+             <h2>Thank You!</h2>
+             <p>Thank You For Subscribing.</p>
+             <button onclick="closePopup()">OK</button>
+             </div>
+         </div>
+        <div class="follow">
+            <h4 style="color: #088178;">Follow us</h4>
+            <div class="icons">
+                <a href="https://www.facebook.com/">
+                <img src="../images/aaw6si4mt.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                <img src="../images/instagram-logo-vector-illustration_1300495-24.png" alt="">
+                </a>
+                <a href="https://x.com/?lang=en">
+                <img src="../images/new-2023-twitter-logo-x-icon-design_1017-45418.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4 style="color: #088178;">Quick link</h4>
+        <a href="../index.html">Home</a>
+            <a href="../Html/product.html">Product</a>
+            <a href="../Html/blog.html">Blog</a>
+            <a href="../Html/research.html">Research</a>
+            <a href="../Html/about.html">About Us</a>
+    </div>
+
+    <div class="copyright">
+        <p>&#169 2025. ChronoVibes</p>
+    </div>
+</footer>
+
+<script src="../js/script.js">
+    function scrollToCategory(categoryId) {
+        const element = document.getElementById(categoryId);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>
